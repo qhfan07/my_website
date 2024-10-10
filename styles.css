@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 70%;
+  }
+  
+nav a {
+    color: #fff;
+    margin: 0 0.5em;
+    text-decoration: none;
+    min-width: 80px;
+    text-align: center;
+    display: inline-block;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 5em 1em 2em;
+    max-width: 800px;
+    line-height: 1.5;
+    margin: auto;
+}
+
+.container li {
+    line-height: 1.5;
+    margin-bottom: 8px; 
+}
+
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.first-letter::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    float: left;
+    margin-right: 5px; 
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.2);
+}
+
+.gallery-item p {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        bottom: 0;
+        top: auto;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .container {
+        padding: 3em 1em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    nav a {
+        margin: 0.2em 0;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+  
